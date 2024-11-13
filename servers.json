@@ -1,6 +1,10 @@
 {
     "servers": [
         {
+            "name": "ny's server >:3",
+            "address": "https://ani.nythepegas.us"
+        },
+        {
             "name": "SideStore",
             "address": "https://ani.sidestore.io"
         },
@@ -47,6 +51,10 @@
         {
             "name": "pythonplayer123",
             "address": "https://ani3server.fly.dev"
+        },
+        {
+            "name": "Don't use this, for testing",
+            "address": "lmao://broken.thing"
         }
     ]
 }

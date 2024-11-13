@@ -54,7 +54,7 @@
         },
         {
             "name": "Don't use this, for testing",
-            "address": "lmao://broken.thing"
+            "address": "https://broken.thing"
         }
     ]
 }

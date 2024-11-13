@@ -44,6 +44,20 @@ jobs:
           fi
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Create redirect index
+        run: |
+          cat > index.html << 'EOL'
+          <!DOCTYPE html>
+          <html>
+            <head>
+              <meta http-equiv="refresh" content="0; url=servers.json">
+            </head>
+            <body>
+              <script>window.location.href = 'servers.json';</script>
+              Redirecting to <a href="servers.json">servers.json</a>...
+            </body>
+          </html>
+          EOL
       - name: Generate hash file
         if: ${{ vars.CREATE_CACHE_KEY == 'true' }}
         run: |
